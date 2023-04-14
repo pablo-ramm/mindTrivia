@@ -1,0 +1,45 @@
+﻿
+
+
+
+<style>
+    body {
+        overflow: scroll;
+        background: linear-gradient(to bottom right, rgba(92, 6, 140, 1), rgba(215, 198, 230, 1)) fixed;
+        min-height: 100%;
+        margin: 0;
+    }
+</style>
+ 
+<link href="./css/home.css" rel="stylesheet"/>
+
+
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+ <h1 style="color: white; text-align:center">Material de Ayuda </h1>
+ 
+<div class="container">
+
+    <div class="content">
+
+        @foreach (var item in Model)
+        {
+            <div class="card card-blue-light">
+
+                <h3 style="text-align: center">@item.Categoria</h3>
+
+                <div style="text-align: center" class="pad-top"><a style="text-align: center" class="button"
+                                                                   href="@Url.Action("Details","Mantenedor",new { id = item.IdPregunta })">Learn More</a></div>
+
+                                                                   
+
+             
+            </div>
+
+        }
+        
+
+
+
+    </div>
+</div>

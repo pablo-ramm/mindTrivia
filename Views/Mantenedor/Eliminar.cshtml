@@ -1,0 +1,23 @@
+﻿@model UsuarioModel
+@{
+    ViewData["Title"] = "Guardar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Eliminar</h1>
+
+<div class="card" style="width:100%">
+    <div class="card-body">
+        <form asp-action="Eliminar" asp-controller="Mantenedor" method="post">
+            <div class="form-group">
+                <label for="IdUsuario">Id Usuario:</label>
+                <input asp-for="IdUsuario" type="text" class="form-control" id="txtIdUsuario" readonly>
+            </div>
+            <div class="form-group">
+                <label for="Nombre">¿Deseas Eliminar al alumno con nombre:</label>
+                <input asp-for="Nombre" type="text" class="form-control" id="nombre" readonly>
+            </div>
+            <button type="submit" class="btn btn-primary">Eliminar</button>
+        </form>
+    </div>
+</div>

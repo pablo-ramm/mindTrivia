@@ -1,0 +1,240 @@
+﻿
+@model PreguntasModel
+@{
+    ViewData["Title"] = "Guardar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
+<style>
+    h1 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: .3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.buttonHolder{
+    text-align:center;
+}
+html {
+    min-height: 100%;
+}
+
+body {
+    overflow: scroll;
+    background: linear-gradient(to bottom right, rgba(92, 6, 140, 1), rgba(215, 198, 230, 1)) fixed;
+    min-height: 100%;
+    margin: 0;
+    
+}
+form{
+        background-color: rgba(144,99,205,1);
+    }
+.form-label {
+    display: absolute;
+    
+    
+    
+}
+.form-control{
+    width: 400px;
+    text-align: center;
+    padding: 2em 0 2em 0;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+
+
+  
+   
+}
+
+ 
+
+
+</style>
+
+ <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100 ">
+                <div class="col-12 col-lg-9 col-xl-7">
+            <form asp-action="GuardarPreguntas" asp-controller="Mantenedor" method="post" class="card" style="border-radius: 1rem; background-color: rgba(144,99,205,1);">
+                        <div class="card text-white" style="border-radius: 1rem; background-color: rgba(144,99,205,1); text-align:center;">
+
+                            <h1 class="mb-4 pb-2 pb-md-0 mb-md-5"> Registro Preguntas</h1>
+
+                            <div class="align-items-center">
+
+                        <label class="form-label" for="txtCategoria">Categoria</label>
+
+                                <input asp-for="Categoria" type="text" id="txtCategoria" class="form-control" placeholder="" />
+                                
+
+                            </div>
+
+
+                            <h1>Pregunta  #1</h1>
+
+                            <div class="form-outline">
+
+                                 <label class="form-label" for="txtPregunta1">Pregunta </label>
+                                <textarea asp-for="Preguntas[0]" class="form-control" id="txtPregunta1" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtRC1.1">Respuesta Correcta</label>
+                                <textarea asp-for="RespuestasCorrectas[0]" class="form-control" id="txtRC1.1" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas[0]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas2[0]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <h1>Pregunta  #2</h1>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Pregunta </label>
+                                <textarea asp-for="Preguntas[1]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Respuesta Correcta</label>
+                                <textarea asp-for="RespuestasCorrectas[1]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas[1]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+
+                            </div>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas2[1]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <h1>Pregunta #3</h1>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Pregunta </label>
+                                <textarea asp-for="Preguntas[2]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Respuesta Correcta</label>
+                                <textarea asp-for="RespuestasCorrectas[2]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+
+                            <div class="form-outline">
+                                <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas[2]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas2[2]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+
+                            <h1>Pregunta #4</h1>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Pregunta </label>
+                                <textarea asp-for="Preguntas[3]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Respuesta Correcta</label>
+                                <textarea asp-for="RespuestasCorrectas[3]" class="form-control" id="form6Example7" rows="4"></textarea>
+                              
+                            </div>
+
+                            <div class="form-outline">
+
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas[3]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas2[3]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+                            <h1>Pregunta #5</h1>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Pregunta 5</label>
+                                <textarea asp-for="Preguntas[4]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Correcta</label>
+                                <textarea asp-for="RespuestasCorrectas[4]" class="form-control" id="form6Example7" rows="4"></textarea>
+                                
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas[4]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+
+                            <div class="form-outline">
+                        <label class="form-label" for="txtCategoria">Respuesta Incorrecta </label>
+                                <textarea asp-for="RespuestasIncorrectas2[4]" class="form-control" id="form6Example7" rows="4"></textarea>
+                               
+                            </div>
+                            <h1>Material de Ayuda</h1>
+                            <div>
+                                <div class="form-outline">
+          
+                                    <textarea asp-for="Material" class="form-control" id="form6Example7" rows="4"></textarea>
+                                    
+                                </div>
+                            </div>
+                            <div class="buttonHolder">
+                                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                            </div>
+
+
+
+                        </div> 
+                     </form>
+                </div>
+            </div>
+   </div>
+
+
+       
+

@@ -1,0 +1,58 @@
+﻿<link rel="stylesheet" href="~/css/card.css" />
+<style>
+    body {
+        overflow: scroll;
+        background: linear-gradient(to bottom right, rgba(92, 6, 140, 1), rgba(215, 198, 230, 1)) fixed;
+        min-height: 100%;
+        margin: 0;
+    }
+
+    .btn {
+            padding: 0px 30px 0px 30px;
+            font-size: 22px;
+            color: #333333;
+            letter-spacing: 3px;
+            border: 2px solid #333333;
+            transition: .3s;
+            text-align:center:
+        }
+
+</style>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <article class="blog-card">
+                <div class="blog-card__background">
+                    <div class="card__background--wrapper">
+                        <div class="card__background--main" style="background-image: url('https://wallpapercave.com/wp/wp4207304.jpg');">
+                            <div class="card__background--layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card__head">
+                    <span class="date__box">
+                        <span class="date__day">18</span>
+                        <span class="date__month">OCT</span>
+                    </span>
+                </div>
+                <div class="blog-card__info">
+                    <h5>@Model.Categoria</h5>
+                    
+                    <p>@Model.Material</p>
+                    
+                </div>
+            </article>
+
+            <div style="text-align: center" >
+
+                <a class="btn" href="http://192.168.1.83:8080/">Jugar </a>
+            </div>
+    </div>
+</div>
+
+<section class="detail-page">
+    <div class="container mt-5">
+
+    </div>
+</section>

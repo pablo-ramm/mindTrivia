@@ -1,0 +1,73 @@
+﻿@model UsuarioModel
+@{
+    ViewData["Title"] = "Guardar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+        body {
+        /* fallback for old browsers */
+        background: #f093fb;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, rgba(92, 6, 140, 1), rgba(245, 87, 108, 1));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, rgba(92, 6, 140, 1), rgba(215, 198, 230, 1))
+    }
+    h1{
+        color:white;
+    }
+</style>
+<h1>Editar</h1>
+
+<div class="card" style="width:100%">
+    <div class="card-body">
+        <form asp-action="Editar" asp-controller="Mantenedor" method="post">
+
+            <div class="form-group">
+                <label for="IdUsuario">Id Usuario:</label>
+                <input asp-for="IdUsuario" type="text" class="form-control" id="txtIdUsuario" readonly>
+            </div>
+
+              <div class="form-group">
+                <label for="Usuario">Usuario:</label>
+                <input asp-for="Usuario" type="text" class="form-control" id="usuario">
+            </div>
+
+            <div class="form-group">
+                <label for="Nombre">Nombre:</label>
+                <input asp-for="Nombre" type="text" class="form-control" id="nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="Apellido">Apellido:</label>
+                <input asp-for="Apellido" type="text" class="form-control" id="apellido">
+            </div>
+
+               <div class="form-group">
+                <label for="Apellido">Apellido:</label>
+                <input asp-for="Apellido" type="text" class="form-control" id="apellido">
+            </div>
+                  
+               <div class="form-group">
+                <label for="Apellido">Apellido:</label>
+                <input asp-for="Apellido" type="text" class="form-control" id="apellido">
+            </div>
+
+            <div class="form-check">
+                <label for="Email">Email:</label>
+                <input asp-for="Email" type="text" class="form-control" id="txtEmail">
+            </div>
+
+              <div class="form-check">
+                <label for="Passw">Password:</label>
+                <input asp-for="Passw" type="text" class="form-control" id="txtPassw">
+            </div>
+
+            <div class="form-check">
+                <label for="Pais">Pais:</label>
+                <input asp-for="Pais" type="text" class="form-control" id="txtPais">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</div>

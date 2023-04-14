@@ -1,0 +1,240 @@
+﻿
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Product Landing Page Template" name="keywords">
+    <meta content="Product Landing Page Template" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Oswald:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="/lib/slick/slick-theme.css" rel="stylesheet">
+    <link href="/lib/slick/slick1.css" rel="stylesheet">
+    <link href="/css/StyleSheet1.css" rel="stylesheet">
+
+</head>
+<style>
+    .section-header p {
+        margin: 0;
+        color:white;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .section-header::before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        left: calc(50% - 25px);
+        bottom: 10px;
+        background: #000000;
+    }
+</style>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  
+
+    @{
+        var test = ViewBag.Test;
+    }
+    <div id="header">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <div class="header-content">
+                        <h2>Plataforma Interactiva<br>Para Transmitir <span>Conocimiento</span></h2>
+                        @if (test != null)
+                        {
+                            <a class="btn" href="http://192.168.1.83:8080/">Jugar</a>
+                        }
+                        @if (test == null)
+                        {
+                            <a class="btn" href="~/Login/Login">Jugar</a>
+                        }
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-md-block d-none"> 
+                        <div class="header-img">
+                        <img src="~/images/MIND_TRANSFER.png" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+        <div id="feature-mini">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="fa fa-child"></i>
+                            <h3>Family Friendly</h3>
+                            <p>Para todas las Edades</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="fa fa-book"></i>
+                            <h3>Material</h3>
+                            <p>Material de Estudio Incluido</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="fa fa-credit-card"></i>
+                            <h3>Precio</h3>
+                            <p>Plataforma libre de Precio</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature-item">
+                            <i class="fa fa-gamepad"></i>
+                            <h3>Juego</h3>
+                            <p>Juego Interactivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+  
+        <div id="feature">
+            <div class="container">
+                <div class="section-header">
+                    <p>Tutorial</p>
+                    <h1>de Creacion de Preguntas</h1>
+                </div>
+            
+                <div align="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/idehRATB1rU" frameborder="0" allowfullscreen> </iframe>
+                </div>
+            </div>
+        </div>
+ 
+
+
+        <div id="process">
+            <div class="container">
+                <div class="section-header">
+                    <p>Como</p>
+                    <h1>Jugar</h1>
+                </div>
+            <div align="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9-UKKLata0I" frameborder="0" allowfullscreen> </iframe>
+            </div>
+             </div>
+         </div>
+      
+   
+
+
+       
+    <div id="testimonial">
+        <div class="section-header">
+            <p>Sobre </p>
+            <h1>Nosotros</h1>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner" align="center">
+
+                <div class="carousel-item active" style="margin:auto">
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4">
+                            <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-1.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0 " style="color:black">Pablo Elias Ramirez</h5><span class="small text-uppercase text-muted">Developer - Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="margin:auto">
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4">
+                            <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0" style="color:black">Jairo Perez</h5><span class="small text-uppercase text-muted">Developer - Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="margin:auto">
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4">
+                            <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0" style="color:black">Pablo Erhard</h5><span class="small text-uppercase text-muted">Developer - Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/pablo-erhard-hern%C3%A1ndez-516263250/?trk=public-profile-join-page" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="margin:auto">
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4 ">
+                            <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0" style="color:black">Elena Ballinas</h5><span class="small text-uppercase text-muted">Developer - Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item " style="margin:auto">
+                    <div class="col-xl-3 col-sm-6 mb-5">
+                        <div class="bg-white rounded shadow-sm py-5 px-4">
+                            <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-1.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                            <h5 class="mb-0 " style="color:black">Eduardo Mora</h5><span class="small text-uppercase text-muted">Developer - Founder</span>
+                            <ul class="social mb-0 list-inline mt-3">
+                                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        </div>
+   
+
+   
+
+
+
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        </body>
+

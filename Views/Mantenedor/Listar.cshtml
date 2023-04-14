@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body {
+        overflow: scroll;
+        background: linear-gradient(to bottom right, rgba(92, 6, 140, 1), rgba(215, 198, 230, 1)) fixed;
+        min-height: 100%;
+        margin: 0;
+    }
+    h1{
+        color: white;
+        align-content:center;
+    }
+</style>
+
+<h1>Listado de Usuarios</h1>
+<a asp-action="Guardar" asp-controller="Mantenedor" class="btn btn-success"><i class="bi bi-plus-square"></i> Insertar Usuario</a>
+<div class="card" style="width:100%">
+
+    <table>
+        <thead class="btn-primary">
+            <tr>
+                <th>Id Usuario</th>
+                <th>Usuario</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> @item.IdUsuario  </td>
+                    <td> @item.Usuario  </td>
+                    <td> @item.Nombre </td>
+                    <td> @item.Edad </td>
+                    <td> <a asp-action="Editar" class="btn btn-secondary" asp-controller="Mantenedor" asp-route-IdUsuario="@item.IdUsuario "><i class="bi bi-pencil-square"></i> Editar</a> </td>
+                    <td> <a asp-action="Eliminar" class="btn btn-danger" asp-controller="Mantenedor" asp-route-IdUsuario="@item.IdUsuario "><i class="bi bi-x-square"></i> Eliminar</a> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
